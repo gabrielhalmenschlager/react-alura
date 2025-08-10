@@ -2,7 +2,7 @@ import './estilo.css'
 
 const icones = [perfil, sacola] 
 
-function Icones() {
+function IconesHeader() {
     return (
         <ul className='icones'>
             { icones.map ( (icone) => (
@@ -11,3 +11,5 @@ function Icones() {
         </ul>
     )
 }
+
+export default IconesHeader
