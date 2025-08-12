@@ -5,7 +5,9 @@ const router = Router()
 
 router.get("/", getLivros) 
 
-router.post("/", )
+router.post("/", (req, res) => {
+    res.send("Você fez uma requisição do tipo POST")
+} )
 
 router.patch("/", (req, res) => {
     res.send("Você fez uma requisição do tipo PATCH")
