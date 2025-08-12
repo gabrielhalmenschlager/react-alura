@@ -3,7 +3,12 @@ const { Router } = require("express")
 const router = Router()
 
 router.get("/", (req, res) => {
-    res.send("Você fez uma requisição do tipo GET")
+    try {
+        res.send("Você fez uma requisição do tipo GET")
+    } catch (error) {
+        res.status(500)
+        res.send(error.message)
+    }
 } ) 
 
 router.post("/", (req, res) => {
