@@ -34,6 +34,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/favoritos" element={<p>favoritos</p>} />
         <Route path="/categorias" element={<p>categorias</p>} />
+        <Route path="/estante" element={<p>estante</p>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
