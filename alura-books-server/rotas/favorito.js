@@ -5,8 +5,8 @@ const router = Router()
 
 router.get("/", getFavoritos)
 
-router.post("/", postFavorito)
+router.post("/:id", postFavorito)
 
-router.delete("/", deleteFavorito)
+router.delete("/:id", deleteFavorito)
 
 module.exports = router
